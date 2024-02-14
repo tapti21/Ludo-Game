@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Click Sound Example</title>
+</head>
+<body>
+  <button id="clickMeButton">Click Me</button>
+  <audio id="clickSound" src="mixkit-classic-click-1117.wav"></audio>
+
+  <script>
+    // Add a click event listener to the button
+    document.addEventListener('DOMContentLoaded', function () {
+      // Get references to the button and audio elements
+      const button = document.getElementById('clickMeButton');
+    
+      const audio = new Audio('mixkit-classic-click-1117.wav');
+
+button.addEventListener('click', function () {
+  audio.play();
+});
+
+      // Add a click event listener to the button
+    });
+  </script>
+</body>
+</html>

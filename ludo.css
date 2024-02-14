@@ -1,0 +1,537 @@
+body{
+    background: url(ludoBordbackground.jpg);
+    background-size: auto;
+    backdrop-filter: blur(1px);
+    background-position: center top;
+    height: 100vh;
+}
+*{
+    margin: 0;
+    padding: 0;
+  /*   border: .5px solid rgba(0, 0, 0, 0.845); */
+}
+.game-board-container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    background-color: rgba(99, 133, 122, 0);
+    padding-bottom:3em;
+}
+.dice-container{
+    height: 40em;
+    width: 5em;
+    background-color: rgba(240, 255, 255, 0);
+
+    margin: 0;
+    margin-top: 3em;
+   
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: column;
+    border: none;
+
+    
+}
+.dice-icon-container{
+    height: 8.31em;
+    width: 100%;
+    background-color: rgba(89, 37, 138, 0);
+    border: none;
+}
+.player-container{
+    height: 3.31em;
+    width: 100%;
+    background-color: rgba(240, 255, 255, 0);
+    
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: none;
+}
+.player-container img{
+    border: none;
+    height: 90%;
+    width: 60%;
+    position: relative;
+}
+.floating{
+    animation: float 1s infinite;
+}
+.dice-place{
+    height: 5em;
+    background-color: rgba(210, 105, 30, 0);
+    position: relative;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    border: none;
+    
+}
+.dice{
+    height: 3em;
+    width: 3em;
+    background-color: azure;
+    border: 3px solid black;
+    border-radius: 15px;
+
+    position: relative;
+
+    display: grid;
+    align-items: center;
+    justify-content: center;
+
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: repeat(3 1fr);
+}
+.rolling{
+    animation: roll 50ms 10;
+   
+}
+/* .p1-dice{
+    
+}
+.p2-dice{
+    animation: roll 50ms 10;
+    animation-play-state: paused;
+}
+.p3-dice{
+    animation: roll 50ms 10;
+    animation-play-state: paused;
+}
+.p4-dice{
+    animation: roll 50ms 10;
+    animation-play-state: paused;
+} */
+@keyframes roll {
+    from{
+        
+       
+        transform: rotate(0deg);
+       /*  height: 3em;
+        width: 3em; */
+        
+    }
+    to{
+       /*  height: 4em;
+        width: 4em; */
+        transform: rotate(360deg);
+        
+    }
+    
+}
+.dice-dots{
+    height: 5px;
+    width: 5px;
+    border: 2px solid black;
+    border-radius: 100%;
+    background-color: rgb(0, 0, 0);
+    margin: auto;
+}
+.roll-value{
+    position: absolute;
+    top: 50px;
+    left: 50px;
+    transform: translate(-50px,-50px);
+    height: 100%;
+    width: 100%;
+
+    border: 0px solid black;
+    border-radius: 15px;
+    background-color: #ffffff;
+}
+.D6{
+    
+    visibility: hidden;
+    display: grid;
+    align-items: center;
+    justify-content: center;
+
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: repeat(3 1fr);
+}
+.D5{
+    visibility: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+.D5 table{
+    border: none;
+    
+}
+.d5td{
+    border: none;
+    margin: 5px;
+}
+.D4{
+    visibility: hidden;
+    display: grid;
+    align-items: center;
+    justify-content: center;
+
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: repeat(3 1fr);
+}
+.D3{
+    visibility: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+.D2{
+    visibility: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+.D1{
+    visibility: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.visible-dice{
+    visibility: visible;
+}
+
+.game-board{
+    
+    background-color: aquamarine;
+    text-align: center;
+    margin: 0;
+    margin-top: 45px;
+    height: 40em;
+    width: 40em;
+
+    display: flex;
+    flex-direction: column;
+}
+.equal-up-down{
+    background-color: blue;
+    width: 100%;
+    height: 16em;
+
+    display: flex;
+
+}
+.player-spot{
+    height: 100%;
+    width: 16em;
+    background-color: rgba(137, 43, 226, 0.658);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+.player{
+    height: 70%;
+    width: 70%;
+    background-color: red;
+}
+.ps1{
+    background-color: rgb(252, 27, 27);
+}
+.ps2{
+    background-color: #0ed145;
+}
+.ps3{
+    background-color: blue;
+}
+.ps4{
+    background-color: yellow;
+}
+.p1{
+    background-color: white;
+
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    justify-content: center;
+    align-items: center;
+    
+}
+.p2{
+    background-color: white;
+
+    
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    justify-content: center;
+    align-items: center;
+}
+.p3{
+    background-color: white;
+
+    
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    justify-content: center;
+    align-items: center;
+}
+.p4{
+    background-color: white;
+
+    
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    justify-content: center;
+    align-items: center;
+}
+.disks{
+    margin: auto;
+    height: 3em;
+    width: 3em;
+    
+    border: 3px solid black;
+    border-radius: 100%;
+}
+.p1-disk{
+    background-color: red;
+}
+.p2-disk{
+    background-color: green;
+}
+.p3-disk{
+    background-color: blue;
+}
+.p4-disk{
+    background-color: yellow;
+}
+
+.disks img , .cube-move-spot img {
+    height: 100%;
+    width: 100%;
+    border: none;
+    position: relative;
+    top: -13px;
+
+   
+   
+}
+/* .p1-disk img{
+    animation: float 1s infinite;
+    
+}
+.p2-disk img{
+    animation: float 1s infinite;
+    animation-play-state: paused;
+}
+.p3-disk img{
+    animation: float 1s infinite;
+    animation-play-state: paused;
+}
+.p4-disk img{
+    animation: float 1s infinite;
+    animation-play-state: paused;
+} */
+@keyframes float {
+    0% { top: -13px; }
+    5% { top: -14px; }
+    10% { top: -15px; }
+    15% { top: -16px; }
+    20% { top: -17px; }
+    25% { top: -18px; }
+    30% { top: -19px; }
+    35% { top: -20px; }
+    40% { top: -21px; }
+    45% { top: -22px; }
+    50% { top: -23px; }
+    55% { top: -24px; }
+    60% { top: -25px; }
+    65% { top: -24px; }
+    70% { top: -23px; }
+    75% { top: -22px; }
+    80% { top: -21px; }
+    85% { top: -20px; }
+    90% { top: -19px; }
+    95% { top: -18px; }
+    100% { top: -13px; }
+}
+
+.vertical-path{
+    height: 100%;
+    width: 8em;
+    background-color: rgba(211, 43, 226, 0.658);
+
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(6, 1fr);
+
+}
+.medium-2nd{
+    height: 8em;
+    background-color: bisque;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+.cube-move-spot{
+    border: .1em solid rgb(0, 0, 0);
+    display: block;
+    height: 2.47em;
+    width: 2.47em;
+    background-color: rgb(255, 255, 255);
+}
+.horizontal-path{
+    height: 100%;
+    width: 16em;
+    background-color: rgba(22, 124, 26, 0.658);
+
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+}
+.green-spot{
+    background-color: #0ed145;
+}
+.yellow-spot{
+    background-color: yellow;
+}
+.blue-spot{
+    background-color: blue;
+}
+.red-spot{
+    background-color: red;
+}
+.star-place{
+    background-image: url(star.png);
+    background-position: center top;
+    background-size: cover;
+}
+.home{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    width: 8em;
+    background-color: rgba(0, 255, 30, 0.658);
+
+}
+.home-box{
+    height: 5px;
+    width: 5px;
+    background-color: chocolate;
+
+    border-top: 4em solid green;
+    border-bottom: 4em solid blue;
+    border-right: 4em solid yellow;
+    border-left: 4em solid red;
+}
+
+.makeGrid{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    align-content: center;
+    align-items: center;
+    justify-items: center;
+}
+.redHome{
+    background: rgba(255, 255, 255, 0);
+    display: block;
+    height: 76px;
+    width: 49px;
+    position: relative;
+    top: -36px;
+    left: -64px;
+
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    align-content: center;
+    align-items: center;
+    justify-items: center;
+}
+.greenHome {
+    background: #3b953b00;
+    display: block;
+    height: 47px;
+    width: 49px;
+    position: relative;
+    top: -140px;
+    left: -22px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    align-content: center;
+    align-items: center;
+    justify-content: center;
+    justify-items: center;
+}
+.blueHome{
+    background: #32c5ff00;
+    display: block;
+    height: 47px;
+    width: 52px;
+    position: relative;
+    top: -103px;
+    left: -26px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    align-content: center;
+    align-items: center;
+    justify-content: center;
+    justify-items: center;
+}
+.yellowHome{
+    background: #cd911a00;
+    display: block;
+    height: 46px;
+    width: 49px;
+    position: relative;
+    top: -193px;
+    left: 19px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    align-content: center;
+    align-items: center;
+    justify-items: center;
+}
+.home-box img{
+    height: 25px;
+    
+    border: none;
+    position: relative;
+    top: -13px;
+}
+.makeGrid2{
+    FONT-VARIANT: JIS83;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    align-content: center;
+    align-items: center;
+    justify-items: center;
+}
+
+/* Small devices (sm) */
+@media (max-width: 576px) {
+   body{
+        transform: scale(0.5);
+        height: 100vh;
+   }
+  }
+  
+  /* Medium devices (md) */
+  @media (min-width: 577px) and (max-width: 768px) {
+    body{
+        transform: scale(0.7);
+        height: 100vh;
+   }
+  }
+  
+  /* Large devices (lg) */
+ /*  @media (min-width: 769px) and (max-width: 992px) {
+    
+  }
+   */
+  /* Extra-large devices (xl) */
+  /* @media (min-width: 993px) {
+    
+  } */
+  

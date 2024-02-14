@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]>      <html class="no-js"> <!--<![endif]-->
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>trial js</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style>
+        *{
+            border: 2px solid black;
+            margin: 5px;
+        }
+        body{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background-color: black;
+        }
+    </style>
+    </head>
+    <body>
+       
+    
+    <script>
+        let datas=["hello","zeeshan"]
+        function getdata(){
+           
+
+            setTimeout(() => {
+                let output='';
+            datas.forEach(data => {
+                output+=data+" ";
+            });
+            console.log(output) 
+            let succes = true;
+           
+            }, 0);
+           
+          
+
+         
+             
+        
+          
+        }
+        function changeName(){
+            return new Promise((resolve) => {
+                setTimeout(() => {
+                datas.pop();
+           
+
+            let input = prompt('enter ');
+            datas.push(input);
+            console.log('name changed');
+            resolve();
+            }, 1000);
+          
+            })
+           
+            
+           
+        }
+
+        async function updatedName(){
+            await changeName();
+            getdata();
+        }
+        updatedName();
+       /*  changeName().then(getdata); */
+       
+       
+    </script>
+    </body>
+</html>

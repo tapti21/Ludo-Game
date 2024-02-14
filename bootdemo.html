@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Bootstrap demo</title>
+   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
+   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe" crossorigin="anonymous"></script>
+  
+<style>
+.navbar {
+  background-color: #333;
+  height: 50px;
+  padding: 0 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.navbar-left {
+  display: flex;
+  align-items: center;
+}
+
+.company-name {
+  color: #fff;
+  font-size: 20px;
+}
+
+.navbar-right ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+}
+
+.navbar-right li {
+  margin-right: 20px;
+}
+
+.navbar-right a {
+  color: #fff;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.navbar-right a:hover {
+  color: #ff9900;
+}
+
+.content {
+  /* Add styles for your website content */
+  padding: 20px;
+}
+#sliderb{
+height:auto;
+width:auto;
+background-color:red;
+}
+<!--footer-->
+.footer {
+  background:red;
+  padding: 30px 0;
+}
+
+.footer h4 {
+  color: #333;
+  font-size: 20px;
+  margin-bottom: 20px;
+}
+
+.footer p {
+  color: #777;
+  font-size: 16px;
+  line-height: 1.5;
+  margin-bottom: 10px;
+}
+
+.footer .row:last-child {
+  margin-top: 20px;
+  border-top: 1px solid #ddd;
+  padding-top: 20px;
+  text-align: center;
+}
+
+
+
+#info{
+height:500px;
+width:auto;
+background-color:orange;
+}
+#com{
+color:red;
+}
+#infobox{
+height:400px;
+width:100%;
+background-color:navy;
+}
+.infobox1{
+height:100%;
+width:50%;
+background-color:pink;
+float:left;
+}
+</style>
+</head>
+<body bgcolor="grey">
+  <nav class="navbar">
+    <div class="navbar-left">
+      <span class="company-name"><img src="https://th.bing.com/th/id/OIG.th6KmajzMJgMzfGlIjss?pid=ImgGn" height="40"></span>
+    </div>
+    <div class="navbar-right">
+      <ul>
+        <li><a href="#">Home</a></li>
+        <li><a href="#">Courses</a></li>
+        <li><a href="#">Training Programs</a></li>
+        <li><a href="#">About Us</a></li>
+        <li><a href="#">Contact</a></li>
+      </ul>
+    </div>
+  </nav>
+
+<div id="sliderb">
+<div id="carouselExampleCaptions" class="carousel slide">
+  <div class="carousel-indicators">
+    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="3" aria-label="Slide 4"></button>
+    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="4" aria-label="Slide 5"></button>
+    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="5" aria-label="Slide 6"></button>
+
+  </div>
+  <div class="carousel-inner">
+    <div class="carousel-item active">
+      <img src="https://delhicoursestraininginstitute.com/wp-content/uploads/2018/06/Top-10-Summer-Training-Institute-and-Programs-Delhi-NCR.jpg" height="625" class="d-block w-100">
+      <div class="carousel-caption d-none d-md-block">
+        <h5>First slide label</h5>
+        <p>Some representative placeholder content for the first slide.</p>
+      </div>
+    </div>
+    <div class="carousel-item">
+      <img src="https://gicseh.com/images/course/winter-training-kolkata.png" height="625" class="d-block w-100" alt="...">
+      <div class="carousel-caption d-none d-md-block">
+        <h5>Second slide label</h5>
+        <p>Some representative placeholder content for the second slide.</p>
+      </div>
+    </div>
+    <div class="carousel-item">
+      <img src="https://solutions1313.com/wp-content/uploads/2020/05/6-month-industrial-training-noida.jpg" height="625" class="d-block w-100" alt="...">
+      <div class="carousel-caption d-none d-md-block">
+        <h5>Third slide label</h5>
+        <p>Some representative placeholder content for the third slide.</p>
+      </div>
+    </div>
+	<div class="carousel-item">
+      <img src="https://onleitechnologies.com/wp-content/uploads/2021/12/1_EZn2o1HupExZVxDouzvWjQ.jpeg" height="625" class="d-block w-100" alt="...">
+      <div class="carousel-caption d-none d-md-block">
+        <h5>fourth slide label</h5>
+        <p>Some representative placeholder content for the third slide.</p>
+      </div>
+    </div>
+	<div class="carousel-item">
+      <img src="https://www.aihr.com/wp-content/uploads/Human-resources-course-syllabus-cover-400x283-1.png" height="625" class="d-block w-100" alt="...">
+      <div class="carousel-caption d-none d-md-block">
+        <h5>fifth slide label</h5>
+        <p>Some representative placeholder content for the third slide.</p>
+      </div>
+    </div>
+	<div class="carousel-item">
+      <img src="https://businessjargons.com/wp-content/uploads/2015/11/apprenticeship-training.jpg" height="625" class="d-block w-100" alt="...">
+      <div class="carousel-caption d-none d-md-block">
+        <h5>sixth slide label</h5>
+        <p>Some representative placeholder content for the third slide.</p>
+      </div>
+    </div>
+  </div>
+  <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Previous</span>
+  </button>
+  <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Next</span>
+  </button>
+</div>
+</div>
+
+<!--info-->
+<div id="info">
+<h3 align="center">About Our <a align="center" id="com">Company </a>
+<h3>
+<div id="infobox">
+<div class="infobox1" style="background-color:navy; color:red;">
+<marquee direction="up"><h3>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed eleifend metus et ipsum tincidunt, et iaculis est consectetur.</h3><h3>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed eleifend metus et ipsum tincidunt, et iaculis est consectetur.</h3><h3>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed eleifend metus et ipsum tincidunt, et iaculis est consectetur.</h3><h3>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed eleifend metus et ipsum tincidunt, et iaculis est consectetur.</h3><h3>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed eleifend metus et ipsum tincidunt, et iaculis est consectetur.</h3></marquee>
+</div>
+<div class="infobox1">
+<marquee direction="down"><h3>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed eleifend metus et ipsum tincidunt, et iaculis est consectetur.</h3><h3>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed eleifend metus et ipsum tincidunt, et iaculis est consectetur.</h3><h3>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed eleifend metus et ipsum tincidunt, et iaculis est consectetur.</h3><h3>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed eleifend metus et ipsum tincidunt, et iaculis est consectetur.</h3><h3>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed eleifend metus et ipsum tincidunt, et iaculis est consectetur.</h3>
+</marquee>
+</div>
+</div>
+
+<!--footer -->
+<footer class="footer">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-6">
+        <h4>About Us</h4>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed eleifend metus et ipsum tincidunt, et iaculis est consectetur.</p>
+      </div>
+      <div class="col-md-6">
+        <h4>Contact Us</h4>
+        <p>123 Industrial Street<br>
+        City, State, ZIP<br>
+        Phone: (123) 456-7890<br>
+        Email: info@example.com</p>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-md-12 text-center">
+        <p>&copy; 2023 Industrial Website. All rights reserved.</p>
+      </div>
+    </div>
+  </div>
+</footer>
+
+</body>
+</html>

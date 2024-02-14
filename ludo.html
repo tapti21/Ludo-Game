@@ -1,0 +1,394 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <meta charset="utf-8">
+        
+        <title>LUDO</title>
+        <link rel="icon" href="ludoFacIcon.png" type="image/png">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="ludo.css">
+      <!--   <link rel="stylesheet" href="bootstrap.min.css"> -->
+    </head>
+    <body>
+       
+       <div class="game-board-container">
+        <div class="dice-container">
+            <div class="dice-icon-container">
+                <div class="player-container" >
+                    <img src="red token.png" alt="" id="redPlayerToken">
+                </div>
+                <div class="dice-place">
+                    <dic class="dice p1-dice " id="p1-dice"> 
+                       <div class="dice-dots"></div>
+                       <div class="dice-dots"></div>
+                       <div class="dice-dots"></div>
+                       <div class="dice-dots"></div>
+                       <div class="dice-dots"></div>
+                       <div class="dice-dots"></div>
+
+                       <div class="roll-value D1" id="D1"><div class="dice-dots"></div></div>
+                       <div class="roll-value D2" id="D2">
+                        <div class="dice-dots"></div>
+                        <div class="dice-dots"></div>
+                       </div>
+                       <div class="roll-value D3" id="D3">
+                        <div class="dice-dots"></div>
+                        <div class="dice-dots"></div>
+                        <div class="dice-dots"></div>
+                        
+                       </div>
+                       <div class="roll-value D4" id="D4">
+                        <div class="dice-dots"></div>
+                        <div class="dice-dots"></div>
+                        <div class="dice-dots"></div>
+                        <div class="dice-dots"></div>
+                       </div>
+                       <div class="roll-value D5" id="D5">
+                        <table align="center" cellspacing="5px" >
+                            <tr>
+                                <td class="d5td"><div class="dice-dots"></div></td>
+                                <td class="d5td"><div class="dice-dots"></div></td>
+                            </tr>
+                            <tr>
+                                <td class="d5td" colspan="2"><div class="dice-dots"></div></td>
+                            </tr>
+                            <tr>
+                                <td class="d5td"><div class="dice-dots"></div></td>
+                                <td class="d5td"><div class="dice-dots"></div></td>
+                            </tr>
+                        </table>
+                        
+                       
+                       </div>
+                       <div class="roll-value D6" id="D6">
+                         <div class="dice-dots"></div>
+                         <div class="dice-dots"></div>
+                         <div class="dice-dots"></div>
+                         <div class="dice-dots"></div>
+                         <div class="dice-dots"></div>
+                         <div class="dice-dots"></div>
+                       </div>
+                    </dic>
+                </div>
+            </div>
+            <div class="dice-icon-container">
+                <div class="player-container ">
+                    <img src="blue token.png" alt=""  id="bluePlayerToken">
+                </div>
+                <div class="dice-place">
+                    <dic class="dice p4-dice" id="p2-dice"> 
+                       <div class="dice-dots"></div>
+                       <div class="dice-dots"></div>
+                       <div class="dice-dots"></div>
+                       <div class="dice-dots"></div>
+                       <div class="dice-dots"></div>
+                       <div class="dice-dots"></div>
+
+                       <div class="roll-value D1" id="D1"><div class="dice-dots"></div></div>
+                       <div class="roll-value D2" id="D2">
+                        <div class="dice-dots"></div>
+                        <div class="dice-dots"></div>
+                       </div>
+                       <div class="roll-value D3" id="D3">
+                        <div class="dice-dots"></div>
+                        <div class="dice-dots"></div>
+                        <div class="dice-dots"></div>
+                        
+                       </div>
+                       <div class="roll-value D4" id="D4">
+                        <div class="dice-dots"></div>
+                        <div class="dice-dots"></div>
+                        <div class="dice-dots"></div>
+                        <div class="dice-dots"></div>
+                       </div>
+                       <div class="roll-value D5" id="D5">
+                        <table align="center" cellspacing="5px" >
+                            <tr>
+                                <td class="d5td"><div class="dice-dots"></div></td>
+                                <td class="d5td"><div class="dice-dots"></div></td>
+                            </tr>
+                            <tr>
+                                <td class="d5td" colspan="2"><div class="dice-dots"></div></td>
+                            </tr>
+                            <tr>
+                                <td class="d5td"><div class="dice-dots"></div></td>
+                                <td class="d5td"><div class="dice-dots"></div></td>
+                            </tr>
+                        </table>
+                        
+                       
+                       </div>
+                       <div class="roll-value D6" id="D6">
+                         <div class="dice-dots"></div>
+                         <div class="dice-dots"></div>
+                         <div class="dice-dots"></div>
+                         <div class="dice-dots"></div>
+                         <div class="dice-dots"></div>
+                         <div class="dice-dots"></div>
+                       </div>
+                    </dic>
+                </div>
+            </div>
+        </div>
+            <div class="game-board">
+                  <div class="1st-half equal-up-down">   
+                    <div class="player-spot ps1">
+                        <div class="player p1">
+                           <div class="disks p1-disk redPath0"><img src="red token.png" class="redToken" alt="red token " name="redToken" id="redToken1"></div>
+                           <div class="disks p1-disk redPath0"><img src="red token.png" class="redToken" alt="red token " name="redToken" id="redToken2"></div>
+                           <div class="disks p1-disk redPath0"><img src="red token.png" class="redToken" alt="red token " name="redToken" id="redToken3"></div>
+                           <div class="disks p1-disk redPath0"><img src="red token.png" class="redToken" alt="red token " name="redToken" id="redToken4"></div>
+                        </div>
+                    </div>
+                    <div class="vertical-path">
+                        <div class="cube-move-spot RGYB bluePath24 yellowPath37 greenPath50 redPath11"></div>
+                        <div class="cube-move-spot RGYB bluePath25 yellowPath38 greenPath51 redPath12"></div>
+                        <div class="cube-move-spot RYB bluePath26 yellowPath39 redPath13"></div>
+                        <div class="cube-move-spot  RGYB bluePath23 yellowPath36 greenPath49 redPath10"></div>
+                        <div class="cube-move-spot green-spot G greenPath52"></div>
+                        <div class="cube-move-spot tokenStart green-spot RGYB bluePath27 yellowPath40 greenPath1 redPath14"></div>
+                        <div class="cube-move-spot star-place RGYB bluePath22 yellowPath35 greenPath48 redPath9"></div>
+                        <div class="cube-move-spot green-spot G greenPath53"></div>
+                        <div class="cube-move-spot RGYB bluePath28 yellowPath41 greenPath2 redPath15"></div>
+                        <div class="cube-move-spot RGYB bluePath21 yellowPath34 greenPath47 redPath8"></div>
+                        <div class="cube-move-spot green-spot G greenPath54"></div>
+                        <div class="cube-move-spot RGYB bluePath29 yellowPath42 greenPath3 redPath16"></div>
+                        <div class="cube-move-spot RGYB bluePath20 yellowPath33 greenPath46 redPath7"></div>
+                        <div class="cube-move-spot green-spot G greenPath55"></div>
+                        <div class="cube-move-spot RGYB bluePath30 yellowPath43 greenPath4 redPath17"></div>
+                        <div class="cube-move-spot RGYB bluePath19 yellowPath32 greenPath45 redPath6"></div>
+                        <div class="cube-move-spot green-spot G greenPath56"></div>
+                        <div class="cube-move-spot RGYB bluePath31 yellowPath44 greenPath5 redPath18"></div>
+                    </div>
+                    
+                    <div class="player-spot ps2">
+                        <div class="player p2">
+                            <div class="disks p2-disk greenPath0"><img src="green token.png" class="greenToken" alt="green token " name="greenToken" id="greenToken1"></div>
+                            <div class="disks p2-disk greenPath0"><img src="green token.png" class="greenToken" alt="green token " name="greenToken" id="greenToken2"></div>
+                            <div class="disks p2-disk greenPath0"><img src="green token.png" class="greenToken" alt="green token " name="greenToken" id="greenToken3"></div>
+                            <div class="disks p2-disk greenPath0"><img src="green token.png" class="greenToken" alt="green token " name="greenToken" id="greenToken4"></div>
+                        </div>
+                    </div>
+                  </div>
+
+                  <div class="medium-2nd">
+                    <div class="horizontal-path">
+                        <div class="cube-move-spot G Y B bluePath13 yellowPath26 greenPath39"></div>
+                        <div class="cube-move-spot tokenStart red-spot RGYB bluePath14 yellowPath27 greenPath40 redPath1"></div>
+                        <div class="cube-move-spot RGYB bluePath15 yellowPath28 greenPath41 redPath2"></div>
+                        <div class="cube-move-spot RGYB bluePath16 yellowPath29 greenPath42 redPath3"></div>
+                        <div class="cube-move-spot RGYB bluePath17 yellowPath30 greenPath43 redPath4"></div>
+                        <div class="cube-move-spot RGYB bluePath18 yellowPath31 greenPath44 redPath5"></div>
+                        <div class="cube-move-spot RGYB bluePath12 yellowPath25 greenPath38 redPath51"></div>
+                        <div class="cube-move-spot red-spot R  redPath52"></div>
+                        <div class="cube-move-spot red-spot R  redPath53"></div>
+                        <div class="cube-move-spot red-spot R  redPath54"></div>
+                        <div class="cube-move-spot red-spot R  redPath55"></div>
+                        <div class="cube-move-spot red-spot R  redPath56"></div>
+                        <div class="cube-move-spot RGYB bluePath11 yellowPath24 greenPath37 redPath50"></div>
+                        <div class="cube-move-spot  RGYB bluePath10 yellowPath23 greenPath36 redPath49"></div>
+                        <div class="cube-move-spot star-place RGYB bluePath9 yellowPath22 greenPath35 redPath48"></div>
+                        <div class="cube-move-spot RGYB bluePath8 yellowPath21 greenPath34 redPath47"></div>
+                        <div class="cube-move-spot RGYB bluePath7 yellowPath20 greenPath33 redPath46"></div>
+                        <div class="cube-move-spot RGYB bluePath6 yellowPath19 greenPath32 redPath45"></div>
+                    </div>
+                    
+                    <div class="home">
+                        <div class="home-box" id="home">
+                             <div class="redPath57 redHome tokenHome" id="redHome"></div>  
+                             <div class="greenPath57 greenHome tokenHome" id="greenHome"></div>  
+                             <div class="bluePath57  blueHome tokenHome" id="blueHome"></div>  
+                             <div class="yellowPath57 yellowHome tokenHome" id="yellowHome"></div>  
+                        </div>
+                    </div>
+                    <div class="horizontal-path">
+                        <div class="cube-move-spot RGYB bluePath32 yellowPath45 greenPath6 redPath19"></div>
+                        <div class="cube-move-spot RGYB bluePath33 yellowPath46 greenPath7 redPath20"></div>
+                        <div class="cube-move-spot RGYB bluePath34 yellowPath47 greenPath8 redPath21"></div>
+                        <div class="cube-move-spot star-place RGYB bluePath35 yellowPath48 greenPath9 redPath22"></div>
+                        <div class="cube-move-spot RGYB bluePath36 yellowPath49 greenPath10 redPath23"></div>
+                        <div class="cube-move-spot RGYB bluePath37 yellowPath50 greenPath11 redPath24"></div>
+                        <div class="cube-move-spot yellow-spot Y yellowPath56"></div>
+                        <div class="cube-move-spot yellow-spot Y yellowPath55"></div>
+                        <div class="cube-move-spot yellow-spot Y yellowPath54"></div>
+                        <div class="cube-move-spot yellow-spot Y yellowPath53"></div>
+                        <div class="cube-move-spot yellow-spot Y yellowPath52"></div>
+                        <div class="cube-move-spot RGYB bluePath38 yellowPath51 greenPath12 redPath25"></div>
+                        <div class="cube-move-spot RGYB bluePath44 yellowPath5 greenPath18 redPath31"></div>
+                        <div class="cube-move-spot RGYB bluePath43 yellowPath4 greenPath17 redPath30"></div>
+                        <div class="cube-move-spot RGYB bluePath42 yellowPath3 greenPath16 redPath29"></div>
+                        <div class="cube-move-spot RGYB bluePath41 yellowPath2 greenPath15 redPath28"></div>
+                        <div class="cube-move-spot tokenStart yellow-spot RGYB bluePath40 yellowPath1 greenPath14 redPath27"></div>
+                        <div class="cube-move-spot R  G B bluePath39 greenPath13 redPath26"></div>
+                    </div>
+                    
+                  </div>
+
+                  <div class="last-half equal-up-down">
+                    <div class="player-spot ps3">
+                        <div class="player p3">
+                            <div class="disks p3-disk bluePath0"><img src="blue token.png" class="blueToken" alt="blue token " name="blueToken" id="blueToken1"></div>
+                            <div class="disks p3-disk bluePath0"><img src="blue token.png" class="blueToken" alt="blue token " name="blueToken" id="blueToken2"></div>
+                            <div class="disks p3-disk bluePath0"><img src="blue token.png" class="blueToken" alt="blue token " name="blueToken" id="blueToken3"></div>
+                            <div class="disks p3-disk bluePath0"><img src="blue token.png" class="blueToken" alt="blue token " name="blueToken" id="blueToken4"></div>
+                        </div>
+                    </div>
+                    <div class="vertical-path">
+                        <div class="cube-move-spot RGYB bluePath5 yellowPath18 greenPath31 redPath44"></div>
+                        <div class="cube-move-spot blue-spot B bluePath56"></div>
+                        <div class="cube-move-spot RGYB bluePath45 yellowPath6 greenPath19 redPath32"></div>
+                        <div class="cube-move-spot RGYB bluePath4 yellowPath17 greenPath30 redPath43"></div>
+                        <div class="cube-move-spot blue-spot B bluePath55"></div>
+                        <div class="cube-move-spot RGYB bluePath46 yellowPath7 greenPath20 redPath33"></div>
+                        <div class="cube-move-spot RGYB bluePath3 yellowPath16 greenPath29 redPath42"></div>
+                        <div class="cube-move-spot blue-spot B bluePath54"></div>
+                        <div class="cube-move-spot RGYB bluePath47 yellowPath8 greenPath21 redPath34"></div>
+                        <div class="cube-move-spot RGYB bluePath2 yellowPath15 greenPath28 redPath41"></div>
+                        <div class="cube-move-spot blue-spot B bluePath53"></div>
+                        <div class="cube-move-spot RGYB star-place bluePath48 yellowPath9 greenPath22 redPath35"></div>
+                        <div class="cube-move-spot tokenStart blue-spot RGYB bluePath1 yellowPath14 greenPath27 redPath40"></div>
+                        <div class="cube-move-spot blue-spot B bluePath52"></div>
+                        <div class="cube-move-spot RGYB bluePath49 yellowPath10 greenPath23 redPath36"></div>
+                        <div class="cube-move-spot R  G Y greenPath26 redPath39 yellowPath13"></div>
+                        <div class="cube-move-spot RGYB bluePath51 yellowPath12 greenPath25 redPath38"></div>
+                        <div class="cube-move-spot RGYB bluePath50 yellowPath11 greenPath24 redPath37"></div>
+                    </div>
+                    
+                    <div class="player-spot ps4">
+                        <div class="player p4">
+                            <div class="disks p4-disk yellowPath0"><img src="yellow token.png" class="yellowToken" alt="yellow token" name="yellowToken" id="yellowToken1"></div>
+                            <div class="disks p4-disk yellowPath0"><img src="yellow token.png" class="yellowToken" alt="yellow token" name="yellowToken" id="yellowToken2"></div>
+                            <div class="disks p4-disk yellowPath0"><img src="yellow token.png" class="yellowToken" alt="yellow token" name="yellowToken" id="yellowToken3"></div>
+                            <div class="disks p4-disk yellowPath0"><img src="yellow token.png" class="yellowToken" alt="yellow token" name="yellowToken" id="yellowToken4"></div>
+                        </div>
+                    </div>
+                  </div>
+            </div>
+        <div class="dice-container">
+            <div class="dice-icon-container">
+                <div class="player-container">
+                    <img src="green token.png" alt=""  id="greenPlayerToken">
+                </div>
+                <div class="dice-place">
+                    <dic class="dice p2-dice" id="p3-dice"> 
+                       <div class="dice-dots"></div>
+                       <div class="dice-dots"></div>
+                       <div class="dice-dots"></div>
+                       <div class="dice-dots"></div>
+                       <div class="dice-dots"></div>
+                       <div class="dice-dots"></div>
+
+                       <div class="roll-value D1" id="D1"><div class="dice-dots"></div></div>
+                       <div class="roll-value D2" id="D2">
+                        <div class="dice-dots"></div>
+                        <div class="dice-dots"></div>
+                       </div>
+                       <div class="roll-value D3" id="D3">
+                        <div class="dice-dots"></div>
+                        <div class="dice-dots"></div>
+                        <div class="dice-dots"></div>
+                        
+                       </div>
+                       <div class="roll-value D4" id="D4">
+                        <div class="dice-dots"></div>
+                        <div class="dice-dots"></div>
+                        <div class="dice-dots"></div>
+                        <div class="dice-dots"></div>
+                       </div>
+                       <div class="roll-value D5" id="D5">
+                        <table align="center" cellspacing="5px" >
+                            <tr>
+                                <td class="d5td"><div class="dice-dots"></div></td>
+                                <td class="d5td"><div class="dice-dots"></div></td>
+                            </tr>
+                            <tr>
+                                <td class="d5td" colspan="2"><div class="dice-dots"></div></td>
+                            </tr>
+                            <tr>
+                                <td class="d5td"><div class="dice-dots"></div></td>
+                                <td class="d5td"><div class="dice-dots"></div></td>
+                            </tr>
+                        </table>
+                        
+                       
+                       </div>
+                       <div class="roll-value D6" id="D6">
+                         <div class="dice-dots"></div>
+                         <div class="dice-dots"></div>
+                         <div class="dice-dots"></div>
+                         <div class="dice-dots"></div>
+                         <div class="dice-dots"></div>
+                         <div class="dice-dots"></div>
+                       </div>
+                    </dic>
+                </div>
+            </div>
+            <div class="dice-icon-container">
+                <div class="player-container">
+                    <img src="yellow token.png" alt=""  id="yellowPlayerToken">
+                </div>
+                <div class="dice-place">
+                    <dic class="dice p3-dice " id="p4-dice"> 
+                       <div class="dice-dots"></div>
+                       <div class="dice-dots"></div>
+                       <div class="dice-dots"></div>
+                       <div class="dice-dots"></div>
+                       <div class="dice-dots"></div>
+                       <div class="dice-dots"></div>
+
+                       <div class="roll-value D1" id="D1"><div class="dice-dots"></div></div>
+                       <div class="roll-value D2" id="D2">
+                        <div class="dice-dots"></div>
+                        <div class="dice-dots"></div>
+                       </div>
+                       <div class="roll-value D3" id="D3">
+                        <div class="dice-dots"></div>
+                        <div class="dice-dots"></div>
+                        <div class="dice-dots"></div>
+                        
+                       </div>
+                       <div class="roll-value D4" id="D4">
+                        <div class="dice-dots"></div>
+                        <div class="dice-dots"></div>
+                        <div class="dice-dots"></div>
+                        <div class="dice-dots"></div>
+                       </div>
+                       <div class="roll-value D5" id="D5">
+                        <table align="center" cellspacing="5px" >
+                            <tr>
+                                <td class="d5td"><div class="dice-dots"></div></td>
+                                <td class="d5td"><div class="dice-dots"></div></td>
+                            </tr>
+                            <tr>
+                                <td class="d5td" colspan="2"><div class="dice-dots"></div></td>
+                            </tr>
+                            <tr>
+                                <td class="d5td"><div class="dice-dots"></div></td>
+                                <td class="d5td"><div class="dice-dots"></div></td>
+                            </tr>
+                        </table>
+                        
+                       
+                       </div>
+                       <div class="roll-value D6" id="D6">
+                         <div class="dice-dots"></div>
+                         <div class="dice-dots"></div>
+                         <div class="dice-dots"></div>
+                         <div class="dice-dots"></div>
+                         <div class="dice-dots"></div>
+                         <div class="dice-dots"></div>
+                       </div>
+                    </dic>
+                </div>
+            </div>
+        </div>
+       </div>
+
+       
+        
+       <!--  <script src="ludo.js" async defer></script> -->
+        <script src="ludo2.js" async defer></script>
+
+    </body>
+</html>

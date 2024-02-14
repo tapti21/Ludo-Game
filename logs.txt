@@ -1,0 +1,69 @@
+log 1 : red path is set 
+log 1 : green path is set 
+log 1 : yellow path is set 
+log 1 : blue path is set 
+====================================
+now its time for token movement 
+
+* given diffent id to differentiate between tokens(redtoken1,yellowToken1...)
+copleted the movement logic 
+
+=========================================
+now its time for actual game logic 
+* skipMove added to check wheter a token in the field or not 
+__________________________________________
+
+=========================================
+All the function in the game to be used 
+1.roll dice ;                                              DONE
+2.show value of dice ;                                     DONE
+3.conditionaly float and click event on the tokens ;       DONE
+4.move the token w.r.t dice value                          DONE
+5.move to another player after click                       DONE
+6.recursively loop between players                         DONE
+7.Show won if a player won                                 DONE
+8.Roll the dice on enter 
+9.makegrid for more than 4 tokens                          DONE
+__________________________________________
+
+=========================================
+All the laws in the game to be used 
+1.open the token with 6 only ;                              DONE
+2.get another chance on getting 6 ;                         DONE
+3.cant kill the any token on its starting path(redPath1)    DONE
+4.cant kill any token on star place                         DONE
+5.kill unlike token on spot                                 DONE
+6.won the game after putting all 4 tokens into home         DONE
+7.AutoPlay when only one token is floating                  DONE
+8.get extra chance on killing token                         DONE
+9.get extra chance on home                                  DONE
+10.skip move which have won in more than two player game    DONE
+__________________________________________
+
+==========================================
+1.some game structure problem ;
+2.check and correct 6 dice operations Some error occured    DONE
+3.redToken error if not playing 
+4.some dice problem 
+5.onclick floating problem 
+__________________________________________
+
+==========================================
+NOW ITS TIME FOR GAME SETUP WHICH INCLUDES : 
+1.Ludo or game logo for style                                DONE
+2.select player option                                       DONE
+2.start only if the playerCount >=2                          DONE
+3.dynamic url for data to be send to ludo                    DONE
+__________________________________________
+
+==========================================
+Now here the laws w.r.t playerCount
+1.get playerCount and who is playing info from dynamic url    DONE
+2.Remove tokens of not playing players                        DONE
+3.Design win logic based on playerCount                       DONE
+4.Skip moves if a player is not playing                       DONE
+__________________________________________
+
+============================================
+Here comes the responsive making ..
+1.make setUp page responsice ..                               DONE
